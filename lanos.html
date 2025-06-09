@@ -1,0 +1,468 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   SFT Marketplace
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Poppins', sans-serif;
+    }
+    /* Interactive hover effect for images */
+    .interactive-img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+    .interactive-img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 10px 20px rgba(128, 90, 213, 0.6);
+      z-index: 10;
+      position: relative;
+    }
+    /* Interactive hover effect for buttons and text links */
+    .interactive-btn, .interactive-text {
+      transition: color 0.3s ease, background-color 0.3s ease;
+      cursor: pointer;
+    }
+    .interactive-btn:hover {
+      background-color: #7c3aed; /* Tailwind purple-700 */
+      color: white;
+    }
+    .interactive-text:hover {
+      color: #a78bfa; /* Tailwind purple-400 */
+    }
+  </style>
+ </head>
+ <body class="bg-[#121212] text-white">
+  <header class="flex items-center justify-between px-6 py-5 max-w-7xl mx-auto">
+   <div class="text-2xl font-bold interactive-text">
+    SFT Marketplace
+   </div>
+   <nav class="hidden md:flex space-x-8 text-sm font-semibold">
+    <a class="interactive-text" href="#">
+     Marketplace
+    </a>
+    <a class="interactive-text" href="#">
+     Ranking
+    </a>
+    <a class="interactive-text" href="#">
+     Connect a wallet
+    </a>
+   </nav>
+   <button class="interactive-btn bg-purple-600 text-white text-sm font-semibold px-5 py-2 rounded-full">
+    Explore
+   </button>
+   <button aria-label="Toggle menu" class="md:hidden text-white text-2xl focus:outline-none" id="mobile-menu-button">
+    <i class="fas fa-bars">
+    </i>
+   </button>
+  </header>
+  <nav class="hidden flex-col space-y-4 bg-[#1e1e1e] px-6 py-6 text-sm font-semibold md:hidden" id="mobile-menu">
+   <a class="interactive-text" href="#">
+    Marketplace
+   </a>
+   <a class="interactive-text" href="#">
+    Ranking
+   </a>
+   <a class="interactive-text" href="#">
+    Connect a wallet
+   </a>
+  </nav>
+  <main class="max-w-7xl mx-auto px-6 pb-20">
+   <section class="pt-10 md:pt-16 grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="md:col-span-2 space-y-6">
+     <h1 class="text-4xl md:text-5xl font-extrabold leading-tight max-w-xl">
+      Discover Digital Art &amp; Collect NFTs
+     </h1>
+     <p class="text-gray-400 max-w-lg text-lg">
+      The largest NFT marketplace. Authentic and truly unique digital
+          creation. Signed and issued by the creator, made possible by
+          blockchain technology.
+     </p>
+     <div class="flex space-x-6 text-sm font-semibold text-gray-400">
+      <div>
+       <span class="text-white font-bold text-lg">
+        240k+
+       </span>
+       Artworks
+      </div>
+      <div>
+       <span class="text-white font-bold text-lg">
+        100k+
+       </span>
+       Auctions
+      </div>
+      <div>
+       <span class="text-white font-bold text-lg">
+        240k+
+       </span>
+       Artists
+      </div>
+     </div>
+    </div>
+    <div class="relative rounded-3xl overflow-hidden shadow-lg">
+     <img alt="Digital art of a person walking on a planet with a large moon in the background, futuristic style" class="w-full h-full object-cover interactive-img" height="400" src="https://storage.googleapis.com/a1aa/image/59df26fa-d7a3-492a-a168-c6413bedf39d.jpg" width="400"/>
+     <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/80 to-transparent p-4">
+      <h2 class="text-lg font-semibold">
+       Space Walking
+      </h2>
+      <p class="text-xs text-gray-400">
+       by @spacewalker
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mt-16">
+    <h3 class="text-xl font-semibold mb-6">
+     Trending Collection
+    </h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-xs font-semibold text-gray-400">
+     <div class="bg-[#1e1e1e] rounded-2xl p-3 flex flex-col items-center space-y-2 cursor-pointer hover:bg-purple-700 transition interactive-img">
+      <img alt="Colorful dog wearing sunglasses digital art NFT" class="rounded-xl" height="80" src="https://storage.googleapis.com/a1aa/image/7a347494-25fb-47c4-778d-14b52d51138c.jpg" width="80"/>
+      <div class="interactive-text">
+       DOGE Animals
+      </div>
+      <div class="text-purple-500 interactive-text">
+       1.2k+ Items
+      </div>
+     </div>
+     <div class="bg-[#1e1e1e] rounded-2xl p-3 flex flex-col items-center space-y-2 cursor-pointer hover:bg-purple-700 transition interactive-img">
+      <img alt="Colorful magic mushrooms digital art NFT" class="rounded-xl" height="80" src="https://storage.googleapis.com/a1aa/image/41060158-cb69-441a-bf30-ca86d0ece663.jpg" width="80"/>
+      <div class="interactive-text">
+       Magic Mushrooms
+      </div>
+      <div class="text-purple-500 interactive-text">
+       1.5k+ Items
+      </div>
+     </div>
+     <div class="bg-[#1e1e1e] rounded-2xl p-3 flex flex-col items-center space-y-2 cursor-pointer hover:bg-purple-700 transition interactive-img">
+      <img alt="Futuristic robot digital art NFT" class="rounded-xl" height="80" src="https://storage.googleapis.com/a1aa/image/6d476ab2-4141-4ed6-3cd0-2e2295c3159a.jpg" width="80"/>
+      <div class="interactive-text">
+       Crypto Robots
+      </div>
+      <div class="text-purple-500 interactive-text">
+       1.1k+ Items
+      </div>
+     </div>
+     <div class="bg-[#1e1e1e] rounded-2xl p-3 flex flex-col items-center space-y-2 cursor-pointer hover:bg-purple-700 transition interactive-img">
+      <img alt="Abstract colorful digital art NFT" class="rounded-xl" height="80" src="https://storage.googleapis.com/a1aa/image/b477db36-1a47-4acf-0403-1579bf90d857.jpg" width="80"/>
+      <div class="interactive-text">
+       Abstract
+      </div>
+      <div class="text-purple-500 interactive-text">
+       900+ Items
+      </div>
+     </div>
+     <div class="bg-[#1e1e1e] rounded-2xl p-3 flex flex-col items-center space-y-2 cursor-pointer hover:bg-purple-700 transition interactive-img">
+      <img alt="Nature inspired digital art NFT" class="rounded-xl" height="80" src="https://storage.googleapis.com/a1aa/image/f1478dd0-28ee-4ca0-8eb5-6e78617b6237.jpg" width="80"/>
+      <div class="interactive-text">
+       Nature
+      </div>
+      <div class="text-purple-500 interactive-text">
+       1.3k+ Items
+      </div>
+     </div>
+     <div class="bg-[#1e1e1e] rounded-2xl p-3 flex flex-col items-center space-y-2 cursor-pointer hover:bg-purple-700 transition interactive-img">
+      <img alt="Photography style digital art NFT" class="rounded-xl" height="80" src="https://storage.googleapis.com/a1aa/image/d9241724-10e4-43b5-cbe1-eb0b0b3601ce.jpg" width="80"/>
+      <div class="interactive-text">
+       Photography
+      </div>
+      <div class="text-purple-500 interactive-text">
+       1.7k+ Items
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mt-16">
+    <h3 class="text-xl font-semibold mb-6">
+     Top Creators
+    </h3>
+    <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-6 text-center text-xs font-semibold text-gray-400">
+     <div class="space-y-2 cursor-pointer hover:text-purple-500 transition interactive-text">
+      <img alt="Avatar of top creator 1 with orange background and glasses" class="rounded-full mx-auto interactive-img" height="80" src="https://storage.googleapis.com/a1aa/image/e2c851c6-8909-415c-e85e-7a4f6e40bc47.jpg" width="80"/>
+      <div class="text-white">
+       John Doe
+      </div>
+      <div>
+       1.2k Sales
+      </div>
+     </div>
+     <div class="space-y-2 cursor-pointer hover:text-purple-500 transition interactive-text">
+      <img alt="Avatar of top creator 2 with yellow background and beard" class="rounded-full mx-auto interactive-img" height="80" src="https://storage.googleapis.com/a1aa/image/041133f9-29ea-4470-a37d-39b541000b88.jpg" width="80"/>
+      <div class="text-white">
+       Jane Smith
+      </div>
+      <div>
+       1.1k Sales
+      </div>
+     </div>
+     <div class="space-y-2 cursor-pointer hover:text-purple-500 transition interactive-text">
+      <img alt="Avatar of top creator 3 with dark background and glasses" class="rounded-full mx-auto interactive-img" height="80" src="https://storage.googleapis.com/a1aa/image/7325cb6d-13a3-44ba-f047-3304be18b856.jpg" width="80"/>
+      <div class="text-white">
+       Alex Johnson
+      </div>
+      <div>
+       1.0k Sales
+      </div>
+     </div>
+     <div class="space-y-2 cursor-pointer hover:text-purple-500 transition interactive-text">
+      <img alt="Avatar of top creator 4 with blue background and headphones" class="rounded-full mx-auto interactive-img" height="80" src="https://storage.googleapis.com/a1aa/image/1b328802-55c2-4a19-de4a-fa225c50c327.jpg" width="80"/>
+      <div class="text-white">
+       Emily Davis
+      </div>
+      <div>
+       950 Sales
+      </div>
+     </div>
+     <div class="space-y-2 cursor-pointer hover:text-purple-500 transition interactive-text">
+      <img alt="Avatar of top creator 5 with green background and hat" class="rounded-full mx-auto interactive-img" height="80" src="https://storage.googleapis.com/a1aa/image/c43be9e4-ddfa-4a33-4bd1-7ff12b7686d0.jpg" width="80"/>
+      <div class="text-white">
+       Michael Lee
+      </div>
+      <div>
+       900 Sales
+      </div>
+     </div>
+     <div class="space-y-2 cursor-pointer hover:text-purple-500 transition interactive-text">
+      <img alt="Avatar of top creator 6 with red background and beard" class="rounded-full mx-auto interactive-img" height="80" src="https://storage.googleapis.com/a1aa/image/f1091f1d-bf14-4219-4bfd-8213d6c0e3bc.jpg" width="80"/>
+      <div class="text-white">
+       Sophia Brown
+      </div>
+      <div>
+       850 Sales
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mt-16">
+    <h3 class="text-xl font-semibold mb-6">
+     Browse Categories
+    </h3>
+    <div class="grid grid-cols-2 sm:grid-cols-4 md:grid-cols-8 gap-4 text-xs font-semibold text-gray-400">
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Art, purple background with paintbrush" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/76156906-0f8e-45df-d20a-ce61e8164708.jpg" width="60"/>
+      <div>
+       Art
+      </div>
+     </div>
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Collectibles, brown background with box" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/27447789-021a-4ee0-365f-e90a4fc782ee.jpg" width="60"/>
+      <div>
+       Collectibles
+      </div>
+     </div>
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Music, blue background with music note" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/9fad8dc0-f13c-4592-4b82-5686894130c0.jpg" width="60"/>
+      <div>
+       Music
+      </div>
+     </div>
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Photography, yellow background with camera" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/7f30cfc8-a4e2-47e8-eff6-75b9461bb2e9.jpg" width="60"/>
+      <div>
+       Photography
+      </div>
+     </div>
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Video, teal background with play button" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/2b6f171d-d02d-4c6c-1ba6-283aeefac5ee.jpg" width="60"/>
+      <div>
+       Video
+      </div>
+     </div>
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Sport, orange background with trophy" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/ef9e98cc-c50b-4117-4e7e-f6cb596993d4.jpg" width="60"/>
+      <div>
+       Sport
+      </div>
+     </div>
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Utility, gray background with gear" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/d6cad7b1-5a6c-4d0e-e05f-6dcc2f690b5b.jpg" width="60"/>
+      <div>
+       Utility
+      </div>
+     </div>
+     <div class="cursor-pointer hover:text-purple-500 transition flex flex-col items-center space-y-1 interactive-text">
+      <img alt="Category icon for Virtual Worlds, purple background with globe" class="rounded-xl interactive-img" height="60" src="https://storage.googleapis.com/a1aa/image/449b4bf2-d7a6-4985-4008-d4af88d9299c.jpg" width="60"/>
+      <div>
+       Virtual Worlds
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mt-16">
+    <h3 class="text-xl font-semibold mb-6">
+     Discover More NFTs
+    </h3>
+    <div class="grid grid-cols-1 sm:grid-cols-3 gap-6">
+     <div class="bg-[#1e1e1e] rounded-3xl overflow-hidden cursor-pointer hover:shadow-lg transition interactive-img">
+      <img alt="Digital art of a person walking on a planet with a large moon in the background, futuristic style" class="w-full h-48 object-cover rounded-t-3xl" height="250" src="https://storage.googleapis.com/a1aa/image/59df26fa-d7a3-492a-a168-c6413bedf39d.jpg" width="400"/>
+      <div class="p-4">
+       <h4 class="text-white font-semibold text-lg interactive-text cursor-pointer">
+        Space Walking
+       </h4>
+       <p class="text-gray-400 text-sm interactive-text cursor-pointer">
+        by @spacewalker
+       </p>
+       <div class="mt-2 flex justify-between text-purple-500 font-semibold text-sm interactive-text cursor-pointer">
+        <span>
+         1.2 ETH
+        </span>
+        <span>
+         3h 15m left
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-[#1e1e1e] rounded-3xl overflow-hidden cursor-pointer hover:shadow-lg transition interactive-img">
+      <img alt="Digital art of a futuristic city on Mars with red sky" class="w-full h-48 object-cover rounded-t-3xl" height="250" src="https://storage.googleapis.com/a1aa/image/7c55c352-652b-4d9b-18a9-beb5faead262.jpg" width="400"/>
+      <div class="p-4">
+       <h4 class="text-white font-semibold text-lg interactive-text cursor-pointer">
+        Life on Mars
+       </h4>
+       <p class="text-gray-400 text-sm interactive-text cursor-pointer">
+        by @marsartist
+       </p>
+       <div class="mt-2 flex justify-between text-purple-500 font-semibold text-sm interactive-text cursor-pointer">
+        <span>
+         2.3 ETH
+        </span>
+        <span>
+         5h 40m left
+        </span>
+       </div>
+      </div>
+     </div>
+     <div class="bg-[#1e1e1e] rounded-3xl overflow-hidden cursor-pointer hover:shadow-lg transition interactive-img">
+      <img alt="Digital art of an astronaut floating in space with stars" class="w-full h-48 object-cover rounded-t-3xl" height="250" src="https://storage.googleapis.com/a1aa/image/43c5dd3b-5366-4626-928e-3d6f7fdcaa81.jpg" width="400"/>
+      <div class="p-4">
+       <h4 class="text-white font-semibold text-lg interactive-text cursor-pointer">
+        Astronaut
+       </h4>
+       <p class="text-gray-400 text-sm interactive-text cursor-pointer">
+        by @spacewalker
+       </p>
+       <div class="mt-2 flex justify-between text-purple-500 font-semibold text-sm interactive-text cursor-pointer">
+        <span>
+         0.9 ETH
+        </span>
+        <span>
+         1h 20m left
+        </span>
+       </div>
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mt-20 relative rounded-3xl overflow-hidden">
+    <img alt="Close-up digital art of colorful magic mushrooms with purple and pink hues" class="w-full h-64 object-cover interactive-img" height="400" src="https://storage.googleapis.com/a1aa/image/b52cff58-90b6-4dc9-18d6-f0e9f34c8b3b.jpg" width="1200"/>
+    <div class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent flex flex-col justify-end p-8">
+     <h2 class="text-4xl font-extrabold mb-4">
+      Magic Mushrooms
+     </h2>
+     <div class="flex space-x-6 text-purple-500 font-semibold text-lg">
+      <div>
+       69
+      </div>
+      <div>
+       59
+      </div>
+      <div>
+       59
+      </div>
+     </div>
+    </div>
+   </section>
+   <section class="mt-20 max-w-4xl mx-auto text-center space-y-12">
+    <h3 class="text-3xl font-extrabold">
+     How It Works
+    </h3>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+     <div class="space-y-4">
+      <div class="mx-auto w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+       1
+      </div>
+      <h4 class="text-lg font-semibold">
+       Create Your Wallet
+      </h4>
+      <p class="text-gray-400 text-sm px-4">
+       Set up your digital wallet to start collecting and selling NFTs.
+      </p>
+     </div>
+     <div class="space-y-4">
+      <div class="mx-auto w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+       2
+      </div>
+      <h4 class="text-lg font-semibold">
+       Create Collection
+      </h4>
+      <p class="text-gray-400 text-sm px-4">
+       Upload your artwork and create your NFT collection easily.
+      </p>
+     </div>
+     <div class="space-y-4">
+      <div class="mx-auto w-20 h-20 bg-purple-600 rounded-full flex items-center justify-center text-white text-3xl font-bold">
+       3
+      </div>
+      <h4 class="text-lg font-semibold">
+       Start Earning
+      </h4>
+      <p class="text-gray-400 text-sm px-4">
+       List your NFTs for sale and start earning from your digital art.
+      </p>
+     </div>
+    </div>
+   </section>
+   <section class="mt-20 max-w-4xl mx-auto bg-[#1e1e1e] rounded-3xl p-8 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-8">
+    <img alt="Astronaut reading a digital tablet, representing weekly digest" class="rounded-3xl w-36 h-36 object-cover interactive-img" height="150" src="https://storage.googleapis.com/a1aa/image/f9324387-cbc1-4ddc-85c4-6cbd2a5c882d.jpg" width="150"/>
+    <div class="flex-1 text-center md:text-left space-y-4">
+     <h3 class="text-2xl font-extrabold">
+      Join Our Weekly Digest
+     </h3>
+     <p class="text-gray-400 max-w-md mx-auto md:mx-0">
+      Get exclusive promotions &amp; updates straight to your inbox.
+     </p>
+     <button class="interactive-btn bg-purple-600 text-white font-semibold px-6 py-3 rounded-full">
+      Sign Up Now
+     </button>
+    </div>
+   </section>
+  </main>
+  <footer class="bg-[#1e1e1e] text-gray-400 text-sm py-8 mt-20">
+   <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <div>
+     © 2024 SFT Marketplace. All rights reserved.
+    </div>
+    <div class="space-x-6">
+     <a class="interactive-text" href="#">
+      Terms
+     </a>
+     <a class="interactive-text" href="#">
+      Privacy
+     </a>
+     <a class="interactive-text" href="#">
+      Contact
+     </a>
+    </div>
+    <form class="flex space-x-2">
+     <input aria-label="Email address" class="rounded-full px-4 py-2 text-black focus:outline-none" placeholder="Your email address" type="email"/>
+     <button class="interactive-btn bg-purple-600 text-white font-semibold px-5 py-2 rounded-full" type="submit">
+      Subscribe
+     </button>
+    </form>
+   </div>
+  </footer>
+  <script>
+   const mobileMenuButton = document.getElementById('mobile-menu-button');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
